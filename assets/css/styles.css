@@ -1,0 +1,146 @@
+/* assets/css/styles.css */
+/* Reset e tipografia */
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Merriweather', serif;
+  background: var(--wm-light);
+  color: var(--wm-dark);
+  line-height:1.6;
+}
+
+/* Variáveis de cor */
+:root {
+  --wm-primary: #1B3A2E;
+  --wm-secondary: #C5A880;
+  --wm-light: #F0F0E8;
+  --wm-dark: #333333;
+}
+
+/* Navegação sticky */
+.nav--sticky {
+  position: sticky; top:0; z-index:999;
+  background: var(--wm-light);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.nav__list {
+  display:flex; flex-wrap:wrap;
+  list-style:none; padding:1rem 2rem;
+}
+.nav__link {
+  margin-right:1.5rem;
+  text-decoration:none;
+  color: var(--wm-dark);
+  font-weight:500;
+  transition: color .3s, border-bottom .3s;
+}
+.nav__link.active,
+.nav__link:hover {
+  color: var(--wm-primary);
+  border-bottom: 2px solid var(--wm-primary);
+}
+
+/* Hero */
+.hero {
+  position:relative; height:100vh;
+  background-size:cover;
+  background-position:center;
+}
+.hero__overlay {
+  position:absolute; inset:0;
+  background: rgba(27,58,46,0.6);
+}
+.hero__content {
+  position:relative; z-index:1;
+  text-align:center;
+  top:50%; transform:translateY(-50%);
+  color: var(--wm-light);
+}
+.btn--primary {
+  display:inline-block;
+  padding:.75rem 1.5rem;
+  background: var(--wm-primary);
+  color: var(--wm-light);
+  border-radius:8px;
+  text-decoration:none;
+  transition: background .3s;
+}
+.btn--primary:hover {
+  background: var(--wm-secondary);
+}
+
+/* Seções e cards */
+.section { padding:4rem 2rem; }
+.overview {
+  display:flex; flex-wrap:wrap; gap:1rem;
+  list-style:none;
+  margin-top:1rem;
+}
+.overview a {
+  padding:.5rem 1rem;
+  border:1px solid var(--wm-primary);
+  border-radius:8px;
+  background: var(--wm-light);
+  color: var(--wm-primary);
+  text-decoration:none;
+  transition: background .3s, color .3s;
+}
+.overview a:hover {
+  background: var(--wm-secondary);
+  color: var(--wm-light);
+}
+
+.cards {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap:2rem;
+  margin-top:2rem;
+}
+.card {
+  background: var(--wm-light);
+  border:2px solid var(--wm-primary);
+  border-radius:8px;
+  padding:1.5rem;
+  box-shadow:2px 2px 8px rgba(0,0,0,0.1);
+}
+.card h3 { color: var(--wm-primary); margin-bottom:1rem; }
+.card ul { list-style:none; }
+.card ul li::before {
+  content:"\2022";
+  color: var(--wm-secondary);
+  display:inline-block;
+  width:1em; margin-left:-1em;
+}
+.price {
+  margin-top:1rem;
+  font-size:1.2rem;
+  font-weight:bold;
+  color: var(--wm-dark);
+}
+
+/* Formulário */
+.form {
+  max-width:400px; margin:2rem auto;
+  display:flex; flex-direction:column; gap:1rem;
+}
+.form input,
+.form textarea {
+  padding:.75rem; border:1px solid #ccc;
+  border-radius:4px;
+}
+.btn--secondary {
+  background: var(--wm-secondary);
+  color: var(--wm-dark);
+  padding:.75rem;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  transition: background .3s;
+}
+.btn--secondary:hover {
+  background: #B18E5A;
+}
+
+/* Responsividade */
+@media(max-width:768px) {
+  .nav__list { flex-direction:column; padding:.5rem; }
+}
