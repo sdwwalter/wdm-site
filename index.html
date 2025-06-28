@@ -1,3 +1,5 @@
+**Arquivo: index.html**
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -5,207 +7,192 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Walter Miranda | Com Propósito</title>
   <meta name="description" content="Servindo com propósito. Conectando destinos. Transformando vidas.">
-  <meta property="og:title" content="Walter Miranda | Com Propósito">
-  <meta property="og:description" content="Explore nossos empreendimentos disponíveis.">
-  <meta property="og:image" content="assets/img/og-image.webp">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <!-- Sticky Navigation -->
-  <nav class="nav--sticky" aria-label="Navegação Principal">
+  <!-- Navegação Sticky -->
+  <nav>
     <ul class="nav__list">
-      <li><a href="#inicio"            class="nav__link active">Início</a></li>
-      <li><a href="#visao-geral"       class="nav__link">Visão Geral</a></li>
-      <li><a href="#res-le-chalet"     class="nav__link">RES Le Chalet</a></li>
-      <li><a href="#residencial-la-roche" class="nav__link">Residencial La Roche</a></li>
-      <li><a href="#residencial-lake-dali" class="nav__link">Residencial Lake Dalí</a></li>
-      <li><a href="#residencial-lancelot" class="nav__link">Residencial Lancelot</a></li>
-      <li><a href="#residencial-le-monde" class="nav__link">Residencial Le Monde</a></li>
-      <li><a href="#residencial-loreto"   class="nav__link">Residencial Loreto</a></li>
-      <li><a href="#sensia-aurora"      class="nav__link">Sensia Aurora</a></li>
-      <li><a href="#contato"           class="nav__link">Contato</a></li>
+      <li><a href="#inicio"      class="nav__link">Início</a></li>
+      <li><a href="#visao-geral" class="nav__link">Visão Geral</a></li>
+      <li><a href="#res-le-chalet"      class="nav__link">RES Le Chalet</a></li>
+      <li><a href="#residencial-la-roche" class="nav__link">La Roche</a></li>
+      <li><a href="#residencial-lake-dali" class="nav__link">Lake Dalí</a></li>
+      <li><a href="#residencial-lancelot" class="nav__link">Lancelot</a></li>
+      <li><a href="#residencial-le-monde"  class="nav__link">Le Monde</a></li>
+      <li><a href="#residencial-loreto"    class="nav__link">Loreto</a></li>
+      <li><a href="#sensia-aurora"         class="nav__link">Sensia Aurora</a></li>
+      <li><a href="#contato"               class="nav__link">Contato</a></li>
     </ul>
-    <button id="toggle-dark" aria-label="Alternar modo escuro">🌓</button>
   </nav>
 
-  <!-- Hero / Início -->
-  <section id="inicio" class="hero" style="background-image:url('assets/img/hero.webp');" role="banner">
-    <div class="hero__overlay"></div>
-    <div class="hero__content">
-      <img  src="assets/img/logo-wdm.svg"
-            alt="Walter Miranda | Com Propósito"
-            class="hero__logo">
-      <p class="hero__slogan">
-        Servindo com propósito. Conectando destinos. Transformando vidas.
-      </p>
-      <a href="#visao-geral" class="btn btn--primary">Ver Visão Geral</a>
+  <!-- Hero Section -->
+  <header id="inicio" class="hero">
+    <div class="hero-content">
+      <img src="assets/img/hero-logo.png" alt="Walter Miranda | Com Propósito" class="logo">
+      <h1>Servindo com propósito.<br>Conectando destinos.<br>Transformando vidas.</h1>
+      <a href="#visao-geral" class="btn">Ver Visão Geral</a>
     </div>
-  </section>
+  </header>
 
-  <!-- Visão Geral -->
-  <section id="visao-geral" class="section" aria-labelledby="visao-title">
-    <h2 id="visao-title">Visão Geral</h2>
-    <ul class="overview">
-      <li><a href="#res-le-chalet">RES Le Chalet</a></li>
-      <li><a href="#residencial-la-roche">Residencial La Roche</a></li>
-      <li><a href="#residencial-lake-dali">Residencial Lake Dalí</a></li>
-      <li><a href="#residencial-lancelot">Residencial Lancelot</a></li>
-      <li><a href="#residencial-le-monde">Residencial Le Monde</a></li>
-      <li><a href="#residencial-loreto">Residencial Loreto</a></li>
-      <li><a href="#sensia-aurora">Sensia Aurora</a></li>
-    </ul>
-  </section>
-
-  <!-- RES Le Chalet -->
-  <section id="res-le-chalet" class="section" aria-labelledby="chalet-title">
-    <h2 id="chalet-title">RES Le Chalet</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>Características</h3>
-        <ul>
-          <li>Tipologias: 1Q S, 2Q S</li>
-          <li>Área interna: 34,83 – 49,47 m²</li>
-          <li>Área do quintal: 0,00 – 18,04 m²</li>
-          <li>Área da varanda: 7,07 m²</li>
-          <li>Acabamento: Padrão</li>
-          <li>Vagas: 1 carro</li>
-        </ul>
-        <p class="price"><strong>R$ 355.590,00</strong></p>
+  <!-- Seção de Cards de Empreendimentos -->
+  <main>
+    <section id="visao-geral" class="cards">
+      <!-- Exemplo de card -->
+      <article class="card" id="res-le-chalet">
+        <img src="assets/img/res-le-chalet.jpg" alt="RES Le Chalet">
+        <div class="card-content">
+          <h3>RES Le Chalet</h3>
+          <p>Empreendimento alto padrão com vista para a serra.</p>
+          <a href="#res-le-chalet" class="btn-link">Saiba mais →</a>
+        </div>
       </article>
-    </div>
-  </section>
+      <!-- Copie o bloco acima e ajuste IDs, imagens e textos para cada projeto -->
+    </section>
+  </main>
 
-  <!-- Residencial La Roche -->
-  <section id="residencial-la-roche" class="section" aria-labelledby="laroche-title">
-    <h2 id="laroche-title">Residencial La Roche</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>Características</h3>
-        <ul>
-          <li>Tipologias: 2Q</li>
-          <li>Área interna: 43,40 – 46,28 m²</li>
-          <li>Quintal: até 4,38 m²</li>
-          <li>Varanda: até 2,54 m²</li>
-          <li>Acabamento: Padrão</li>
-          <li>Vagas: 1 carro</li>
-        </ul>
-        <p class="price"><strong>R$ 304.116,60</strong></p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Residencial Lake Dalí -->
-  <section id="residencial-lake-dali" class="section" aria-labelledby="dali-title">
-    <h2 id="dali-title">Residencial Lake Dalí</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>Características</h3>
-        <ul>
-          <li>Tipologias: 2Q</li>
-          <li>Área interna: 48,35 – 60,04 m²</li>
-          <li>Quintal: até 8,67 m²</li>
-          <li>Varanda: 3,00 – 7,00 m²</li>
-          <li>Acabamento: Padrão</li>
-          <li>Vagas: 1 carro</li>
-        </ul>
-        <p class="price"><strong>R$ 304.855,38</strong></p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Residencial Lancelot -->
-  <section id="residencial-lancelot" class="section" aria-labelledby="lancelot-title">
-    <h2 id="lancelot-title">Residencial Lancelot</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>Características</h3>
-        <ul>
-          <li>Tipologias: 2Q</li>
-          <li>Área interna: 37,28 – 44,28 m²</li>
-          <li>Quintal: até 9,00 m²</li>
-          <li>Varanda: até 7,00 m²</li>
-          <li>Acabamento: Padrão</li>
-          <li>Vagas: 1 carro</li>
-        </ul>
-        <p class="price"><strong>R$ 264.558,00</strong></p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Residencial Le Monde -->
-  <section id="residencial-le-monde" class="section" aria-labelledby="lemonde-title">
-    <h2 id="lemonde-title">Residencial Le Monde</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>Características</h3>
-        <ul>
-          <li>Tipologias: 2Q, 3Q</li>
-          <li>Área interna: 50,00 – 65,00 m²</li>
-          <li>Quintal: até 12,00 m²</li>
-          <li>Varanda: 4,00 – 8,00 m²</li>
-          <li>Acabamento: Padrão</li>
-          <li>Vagas: 1 carro</li>
-        </ul>
-        <p class="price"><strong>R$ 324.656,67</strong></p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Residencial Loreto -->
-  <section id="residencial-loreto" class="section" aria-labelledby="loreto-title">
-    <h2 id="loreto-title">Residencial Loreto</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>Características</h3>
-        <ul>
-          <li>Tipologias: 2Q</li>
-          <li>Área interna: 40,82 m²</li>
-          <li>Quintal: até 9,87 m²</li>
-          <li>Varanda: até 3,75 m²</li>
-          <li>Acabamento: Padrão</li>
-          <li>Vagas: 1 carro</li>
-        </ul>
-        <p class="price"><strong>R$ 238.611,43</strong></p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Sensia Aurora -->
-  <section id="sensia-aurora" class="section" aria-labelledby="aurora-title">
-    <h2 id="aurora-title">Sensia Aurora</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>Características</h3>
-        <ul>
-          <li>Tipologias: 1Q S, 2Q S</li>
-          <li>Área interna: 34,84 – 50,43 m²</li>
-          <li>Quintal: até 42,60 m²</li>
-          <li>Varanda: 5,83 – 6,19 m²</li>
-          <li>Acabamento: Padrão</li>
-          <li>Vagas: 1 carro</li>
-        </ul>
-        <p class="price"><strong>R$ 491.134,13</strong></p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section id="contato" class="section" aria-labelledby="contato-title">
-    <h2 id="contato-title">Contato</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST" class="form">
-      <label for="nome">Nome</label>
-      <input type="text" id="nome" name="nome" required>
-
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email">
-
-      <label for="mensagem">Mensagem</label>
-      <textarea id="mensagem" name="mensagem" rows="4"></textarea>
-
-      <button type="submit" class="btn btn--secondary">Enviar</button>
-    </form>
-  </section>
-
-  <script src="assets/js/scripts.js" async></script>
+  <!-- Rodapé com Contato Rápido -->
+  <footer id="contato">
+    <p>Quer saber mais ou agendar uma visita?</p>
+    <p><a href="https://wa.me/5543988616329?text=Ol%C3%A1%20Walter,%20quero%20saber%20mais" target="_blank">Clique aqui para falar comigo no WhatsApp →</a></p>
+    <p>&copy; 2025 Walter Miranda | Com Propósito</p>
+  </footer>
 </body>
 </html>
+```
+
+**Arquivo: assets/css/styles.css**
+```css
+/* Variáveis de tema */
+:root {
+  --wm-primary:    #1B3A2E; /* Verde escuro */
+  --wm-secondary:  #C5A880; /* Dourado suave */
+  --wm-light:      #F0F0E8; /* Off-white */
+  --wm-dark:       #333333;
+  --font-serif:    'Merriweather', serif;
+  --font-sans:     'Inter', sans-serif;
+}
+
+/* Reset & base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: var(--font-sans);
+  background: var(--wm-light);
+  color: var(--wm-dark);
+  line-height: 1.6;
+}
+
+/* Navegação */
+nav {
+  position: sticky;
+  top: 0;
+  background: var(--wm-light);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+nav .nav__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+}
+nav .nav__link {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--wm-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  background: url('../img/hero-bg.jpg') center/cover no-repeat;
+  padding: 8rem 1rem;
+  text-align: center;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(27,58,46,0.7);
+}
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--wm-light);
+}
+.hero-content img.logo {
+  width: 150px;
+  margin-bottom: 2rem;
+}
+.hero-content h1 {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+.hero-content .btn {
+  display: inline-block;
+  background: var(--wm-primary);
+  color: var(--wm-light);
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Cards de Empreendimentos */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 2rem;
+  padding: 4rem 1rem;
+}
+.card {
+  background: var(--wm-light);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 100%;
+  display: block;
+}
+.card-content {
+  padding: 1.5rem;
+}
+.card-content h3 {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.card-content p {
+  margin-bottom: 1rem;
+}
+.card-content .btn-link {
+  color: var(--wm-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Rodapé */
+footer {
+  background: var(--wm-primary);
+  color: var(--wm-light);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+footer a {
+  color: var(--wm-secondary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  nav .nav__list {
+    flex-direction: column;
+  }
+}
